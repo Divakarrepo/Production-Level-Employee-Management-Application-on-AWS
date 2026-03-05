@@ -14,7 +14,7 @@ The application allows users to:
 
 ## 🏗️ Architecture Diagram
 
-![Architecture Diagram](architecture.png)
+![Architecture Diagram](screenshots/architecture.png)
 
 ---
 
