@@ -86,6 +86,18 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(50),
 email VARCHAR(50),
 department VARCHAR(50)
-);```
+);
+```
 
-###🔄 Application Flow
+### 🔄 Application Flow
+
+- User accesses Load Balancer DNS
+- ALB forwards traffic to healthy EC2 instances
+- Application stores/retrieves data from RDS
+- Bastion host used for secure SSH access
+
+### 📈 Auto Scaling Test
+
+- Manually terminate one EC2 instance
+- Auto Scaling automatically launches replacement
+- Zero downtime for end users
